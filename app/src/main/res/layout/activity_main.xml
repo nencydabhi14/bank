@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#6DFFFFFF"
+                  android:orientation="vertical">
+
+                     <FrameLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:layout_gravity="bottom|right">
+
+                                   <FrameLayout
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginBottom="13dp">
+                                          <ImageView
+                                              android:background="@drawable/ripaleffect"
+                                              android:layout_width="55dp"
+                                              android:layout_height="55dp"
+                                              android:src="@drawable/blackbk"/>
+
+                                          <ImageView
+                                              android:id="@+id/button_id"
+                                              android:layout_width="55dp"
+                                              android:layout_height="55dp"
+                                              android:padding="15dp"
+                                              android:background="@drawable/ripaleffect"
+                                              android:layout_gravity="center"
+                                              android:src="@drawable/plus"/>
+                                   </FrameLayout>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:layout_gravity="bottom|left">
+
+                                   <FrameLayout
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginBottom="13dp">
+                                          <ImageView
+                                              android:background="@drawable/ripaleffect"
+                                              android:layout_width="55dp"
+                                              android:layout_height="55dp"
+                                              android:src="@drawable/blackbk"/>
+
+                                          <ImageView
+                                              android:id="@+id/filter_id"
+                                              android:layout_width="55dp"
+                                              android:layout_height="55dp"
+                                              android:padding="14dp"
+                                              android:background="@drawable/ripaleffect"
+                                              android:layout_gravity="center"
+                                              android:src="@drawable/filter"/>
+                                   </FrameLayout>
+
+
+
+                            </LinearLayout>
+
+                     </FrameLayout>
+
+
+              </LinearLayout>
+
+
+<!--              <Button-->
+<!--                  android:id="@+id/button_id"-->
+<!--                  android:layout_gravity="center"-->
+<!--                  android:layout_width="100dp"-->
+<!--                  android:layout_height="50dp"-->
+<!--                  android:text="ADD"/>-->
+       </FrameLayout>
+
+
+
+
+</LinearLayout>

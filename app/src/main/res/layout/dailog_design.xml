@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_height="500dp">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="top">
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="ADD DATA"
+            android:gravity="center"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Amount"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/amount_edt"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Amount"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Category"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/category_brn"
+        android:layout_width="350dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/incom_rd"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:textSize="15dp"/>
+
+            <RadioButton
+                android:id="@+id/expence_rd"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Expence"
+                android:textSize="15dp"/>
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Data"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/adddata_edt"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:hint="Add Data"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_gravity="center|bottom"
+        android:layout_width="200dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_height="70dp"
+        android:textSize="16dp"
+        android:text="ADD"/>
+
+
+</LinearLayout>

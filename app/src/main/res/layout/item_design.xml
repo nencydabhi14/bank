@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="110dp"
+            app:cardElevation="10dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/card_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#131313">
+                <TextView
+                    android:id="@+id/txt_id"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp"
+                    android:text="AGEWFWE"
+                    android:textSize="19dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/category_id"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="income"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/data_id"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="AGEWFWE"
+                android:layout_marginBottom="20dp"
+                android:gravity="bottom"
+                android:textSize="19dp"
+                android:textColor="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>
